@@ -125,7 +125,7 @@ header h1  , p{
     background-color: #009900; /* Darker green on hover */
 }
 
-.send-button {
+#send-button {
     padding: 10px 20px;
     background-color: #00ff00; /* Bright green button */
     color: #000000; /* Black text for button */
@@ -231,7 +231,7 @@ header h1  , p{
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
-    .message-input, .image-label, .send-button {
+    .message-input, .image-label, #send-button {
         font-size: 14px;
         padding: 8px 15px;
     }
@@ -245,12 +245,35 @@ header h1  , p{
         max-height: 90%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .message-input, .image-label, #send-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
 .timestamp {
+    display: none; /* Hide timestamp by default */
+    font-size: 12px;
+    color: #666666; /* Lighter color for timestamps */
+    margin-top: 5px;
+}
     display: block;
     font-size: 12px;
     color: #666666; /* Lighter color for timestamps */
     margin-top: 5px;
 }
+ 
 /* 
 updated css */
 .message {

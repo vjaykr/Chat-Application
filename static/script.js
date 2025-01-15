@@ -52,6 +52,7 @@ function sendMessage(socket, username) {
     if (message.trim() !== "") {
         socket.send({'username': username, 'message': message});
         input.value = '';
+        
     }
 }
 
