@@ -248,3 +248,20 @@ header p{
         max-height: 80%;
     }
 }
+
+
+.message .view-button {
+    padding: 5px 10px;
+    background-color: #00ff00; /* Bright green button */
+    color: #000000; /* Black text for button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.message .view-button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
